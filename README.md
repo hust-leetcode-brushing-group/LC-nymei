@@ -1,5 +1,15 @@
 # Niuyin Mei's LC Solutions
 
-项目概述位于：
+## 目前完成题目
 
-https://niuyinmei.gitbook.io/leetcode-solution-of-niuyin-mei/ 
+Easy难度：
+
+
+
+Medium难度：
+
+50-Pow(x,n):			[解释](explanations/50-Pow(x,n).md)		Java代码	
+
+Hard难度：
+
+## 
