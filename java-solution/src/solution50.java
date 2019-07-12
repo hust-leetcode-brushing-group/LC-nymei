@@ -15,14 +15,13 @@ public class solution50 {
         int exp;
         if(n < 0)	exp = -n;
         else	exp = n;
-        double result = x;
-        while(exp != 1) {
-        	if((exp&1) == 1) {	
+        double result = 1;
+        while(exp != 0) {
+        	if((exp&1) == 1) {
         		result = result * x;
         	}
-        	if(result)
         	x *= x;
-        	exp = exp >> 1;
+        	exp = exp / 2;
         }
         if(n > 0)	return result;
         else return 1/result;

@@ -8,7 +8,14 @@ Easy难度：
 
 Medium难度：
 
-50-Pow(x,n):			[解释](explanations/50-Pow(x,n).md)		Java代码	
+| 题目名称    |                                     |           |
+| :---------- | ----------------------------------- | --------- |
+| 50-Pow(x,n) | [解释](explanations/50-Pow(x,n).md) | Java 代码 |
+|             |                                     |           |
+|             |                                     |           |
+|             |                                     |           |
+
+​				
 
 Hard难度：
 
