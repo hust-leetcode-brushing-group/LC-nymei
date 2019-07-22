@@ -8,7 +8,7 @@ public class solution94 {
 		if(root == null) {
         	return result;
         }
-		result = inorderTraversal(root.left);
+		result.addAll(inorderTraversal(root.left));
 		result.add(root.val);
 		result.addAll(inorderTraversal(root.right));
 		return result;
