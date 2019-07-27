@@ -1,16 +1,23 @@
-/*TODO: jump game:dynamic planning*/
+// jump game dynamic planning
 public class solution55 {
 	public boolean canJump(int[] nums) {
+		if(nums.length == 1) {
+			return true;
+		}
+		int total = 0;
+		int temp = 0;
+		for(int i = 0; i < nums.length - 1; i++) {
+            if(total < i)   break;
+			temp = i + nums[i];
+			total = Math.max(temp, total);
+		}
+		if(total >= nums.length-1) {
+			return true;
+		}
+		else {
+			return false;
+		}
 		
-		return backtrack(nums, 0);
     }
 	
-	public boolean backtrack(int[]nums, int start) {
-		if(nums[start] == 0)	return false;
-		if(nums[start] + start >= nums.length - 1)	return true;
-		for(int i = start; i < start + nums[start]; i++) {
-			if(backtrack(nums, i))	return true;
-		}
-		return false;
-	}
 }
