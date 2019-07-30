@@ -1,4 +1,4 @@
-// jump game dynamic planning
+// jump game I dynamic planning
 public class solution55 {
 	public boolean canJump(int[] nums) {
 		if(nums.length == 1) {
