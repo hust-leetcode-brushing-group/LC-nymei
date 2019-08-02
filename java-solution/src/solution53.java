@@ -1,5 +1,4 @@
 //maximum subarray
-/*TODO:Maximum Subarray*/
 public class solution53 {
 	public int maxSubArray(int[] nums) {
         int current_max = 0;
@@ -10,7 +9,7 @@ public class solution53 {
         		global_max = current_max;
         	}
         	if(current_max < 0) {
-        		
+        		current_max = 0;
         	}
         		
         }
