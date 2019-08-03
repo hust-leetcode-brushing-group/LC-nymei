@@ -1,5 +1,5 @@
 import java.util.List;
-
+//triangle
 public class solution120 {
 	public int minimumTotal(List<List<Integer>> triangle) {
 		int tsize = triangle.size();
