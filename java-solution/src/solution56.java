@@ -24,7 +24,7 @@ public class solution56 {
         		tempResult.add(temp);
         	}
         	else {
-        		if(intervals[i][0] < tempResult.get(tempResult.size() - 1).get(0)) {
+        		if(intervals[i][0] <= tempResult.get(tempResult.size() - 1).get(1)) {
         			if(intervals[i][1] > tempResult.get(tempResult.size() - 1).get(1)) {
         				tempResult.get(tempResult.size() - 1).set(1, intervals[i][1]);
         			}
@@ -39,7 +39,9 @@ public class solution56 {
         }
         int[][] result = new int[tempResult.size()][2];
         for (int i = 0; i < tempResult.size(); i++) {
+        	result[i][0] = tempResult.get(i).get(0);
+        	result[i][1] = tempResult.get(i).get(1);
         }
-        
+        return result;
     }
 }
