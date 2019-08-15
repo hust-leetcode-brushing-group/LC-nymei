@@ -9,10 +9,10 @@ public class solution35 {
         	mid = (left + right) / 2;
         	if(nums[mid] == target)	return mid;
         	if(nums[mid] > target) {
-        		right--;
+        		right = mid - 1;
         	}
         	else {
-        		left++;
+        		left = mid + 1;
         	}
         }
         return target > nums[mid] ? mid + 1 : mid;
